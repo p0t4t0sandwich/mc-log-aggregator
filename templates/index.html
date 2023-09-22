@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <!--  <script src="https://cdn.neuralnexus.dev/htmx/htmx.v1.9.5.min.js"></script> -->
+
+        <style>
+            body {
+                font-family: sans-serif;
+                font-size: 1.2em;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- This is a dummy frame to prevent the page from reloading when a form is submitted -->
+        <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
+
+        <p>Upload File</p>
+        <form action="/upload" method="post" enctype="multipart/form-data" target="dummyframe">
+            <input type="file" name="file">
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
